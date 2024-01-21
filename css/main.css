@@ -107,7 +107,7 @@
 
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 50px;
 }
 
@@ -184,7 +184,7 @@
   border-radius: 5px;
 }
 
-@media (max-width: 430px) {
+@media (min-width: 351px) and (max-width: 430px) {
   .suggest-media {
     font-size: 15px;
     padding-left: 10px;
@@ -199,5 +199,39 @@
   .logo {
     height: 80px;
   }
+
+  .gridContainer {
+    column-gap: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .suggest-media {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gridContainer {
+    column-gap: 30px;
+  }
+
+  .link {
+    padding: 15px 15px;
+    font-size: 23px;
+  }
+
+  .link img {
+    height: 80px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .c-wan {
+    font-family: apple-regular;
+    font-size: 8px;
+  } 
 }
 
